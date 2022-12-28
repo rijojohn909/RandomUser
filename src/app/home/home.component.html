@@ -1,0 +1,15 @@
+<div class="container d-flex align-items-center justify-content-center mt-5">
+
+<div class="card" [ngStyle]="{'background-color':bgColor}" style="width: 18rem;">
+    <img [src]="photo" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">{{name}}</h5>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">{{gender}}</li>
+      <li class="list-group-item">{{address}}</li>
+    </ul>
+    <input type="button" (click)="reload()" value="Random User">
+   
+  </div>
+</div>
